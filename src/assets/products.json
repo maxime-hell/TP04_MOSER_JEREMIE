@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Potato",
+      "price": 10.99
+    },
+    {
+      "id": 2,
+      "name": "Lettuce",
+      "price": 10.99
+    },
+    {
+      "id": 3,
+      "name": "Tomato",
+      "price": 7.99
+    },
+    {
+      "id": 1,
+      "name": "Pumpkin",
+      "price": 7.99
+    },
+    {
+      "id": 2,
+      "name": "Carot",
+      "price": 4.99
+    },
+    {
+      "id": 3,
+      "name": "Cole Crops",
+      "price": 3.99
+    }
+  ]

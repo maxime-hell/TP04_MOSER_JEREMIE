@@ -1,0 +1,7 @@
+<p>panier works!</p>
+<div>Product number : {{ nb$ | async }}</div>
+<br>
+<div *ngFor="let product of liste$ | async">
+    {{ product.name }} <button (click)="delProduct(product)"> - </button>
+  </div>
+  <br>

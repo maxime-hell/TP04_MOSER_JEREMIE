@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TP04';
+  filters:any[] = ["",0] ;
+  SendSearchParams($event : any){
+    console.log($event);
+this.filters = $event;
+  }
 }
