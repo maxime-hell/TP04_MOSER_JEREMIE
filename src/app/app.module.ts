@@ -9,6 +9,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
 import { ProductState } from './states/product.state';
 import { NgxsModule } from '@ngxs/store';
+import { PanierComponent } from './panier/panier.component';
 
 @NgModule({
   declarations: [
