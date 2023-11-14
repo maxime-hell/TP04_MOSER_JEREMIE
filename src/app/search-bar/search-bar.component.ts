@@ -13,7 +13,6 @@ export class SearchBarComponent {
   searchItems: any[2] = [];
 
   OnSearchUpdate() {
-    console.log("cheh !");
     this.searchItems = [this.nameSearch, this.priceSearch];
     this.searchUpdated.emit(this.searchItems);
   }

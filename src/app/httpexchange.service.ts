@@ -11,6 +11,6 @@ export class HTTPExchangeService {
   constructor(private http: HttpClient) { }
   
   getProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>('./assets/products.json');
+    return this.http.get<Product[]>('../assets/products.json');
   }
 }

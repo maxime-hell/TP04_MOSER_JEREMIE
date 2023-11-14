@@ -15,7 +15,8 @@ import { PanierComponent } from './panier/panier.component';
   declarations: [
     AppComponent,
     ProductsViewComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    PanierComponent
   ],
   imports: [
     NgxsModule.forRoot([ProductState]),
