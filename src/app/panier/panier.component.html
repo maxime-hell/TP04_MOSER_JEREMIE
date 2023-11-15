@@ -1,7 +1,7 @@
-<p>panier works!</p>
-<div>Product number : {{ nb$ | async }}</div>
+<!-- <p>panier works!</p> -->
+<div>Product count : {{ nb$ | async }}</div>
+<div>Cart price : {{ cartPrice$ | async }} €</div>
 <br>
 <div *ngFor="let product of liste$ | async">
-    {{ product.name }} <button (click)="delProduct(product)"> - </button>
+    {{ product.name }} {{product.price}} €  <button (click)="delProduct(product)">-</button>
   </div>
-  <br>

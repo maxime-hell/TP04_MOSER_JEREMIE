@@ -21,7 +21,13 @@ export class ProductsViewComponent {
     this.products$ = this.httpExchangeService.getProducts();
   }
   addProduct(product: Product) {
+    console.log("#########################");
     console.log(product);
-    this.store.dispatch(new AddProduct(product));
+    const copyProduct: Product = { ...product };
+    //copyProduct.name = 'FEURRRRRRRRRR';
+    console.log(copyProduct);
+    console.log(product);
+    console.log("#########################");
+    this.store.dispatch(new AddProduct(copyProduct));
   }
 }

@@ -12,12 +12,10 @@ import {AddProduct, DelProduct} from '../actions/product-action'
 })
 export class PanierComponent {
   @Select(ProductState.getProductList) liste$!: Observable<Product[]>;
-  @Select(ProductState.getProductCount) nb$!: Observable<number[]>;
-  constructor(private store: Store) { 
-
-  }
-  ngOnInit() {
-  }
+  @Select(ProductState.getProductCount) nb$!: Observable<number>;
+  @Select(ProductState.getCartPrice) cartPrice$!: Observable<number>;
+  constructor(private store: Store) {   }
+  ngOnInit() {  }
   delProduct(product: Product): void {
     this.store.dispatch(new DelProduct(product));
   }
