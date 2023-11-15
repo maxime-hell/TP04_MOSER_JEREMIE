@@ -11,9 +11,11 @@ import {AddProduct, DelProduct} from '../actions/product-action'
   styleUrls: ['./panier.component.css']
 })
 export class PanierComponent {
-  constructor(private store: Store) { }
-  @Select(ProductState.getProductList) liste$: Observable<Product[]>;
-  @Select(ProductState.getProductCount) nb$: Observable<number[]>;
+  @Select(ProductState.getProductList) liste$!: Observable<Product[]>;
+  @Select(ProductState.getProductCount) nb$!: Observable<number[]>;
+  constructor(private store: Store) { 
+
+  }
   ngOnInit() {
   }
   delProduct(product: Product): void {

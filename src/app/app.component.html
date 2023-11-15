@@ -1,3 +1,3 @@
-<app-panier></app-panier>
+<!-- <app-panier></app-panier> -->
 <app-search-bar (searchUpdated)="SendSearchParams($event)"></app-search-bar>
-<app-products-view></app-products-view>
+<app-products-view [filters]="filters"></app-products-view>

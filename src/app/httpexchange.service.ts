@@ -7,10 +7,10 @@ import { Product } from './product.model';
   providedIn: 'root'
 })
 export class HTTPExchangeService {
-
-  constructor(private http: HttpClient) { }
   
+  constructor(private http: HttpClient) { }
+
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>('../assets/products.json');
-  }
+    }
 }
